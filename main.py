@@ -3,15 +3,14 @@ import pandas as pd
 
 class Names:
     numNames = 0
-    #################
-    # Implement the class Names
-    #################
-
     def __init__(self, n, g, c):
         self._name = n
         self._gender = g
         self._count = c
         Names.numNames += 1
+    #################
+    # Implement the class Names
+    #################
 
 
 def makeList(filename):
@@ -36,13 +35,6 @@ def printList(nlist):
 
 
 def printName(nlist, key):
-    cnt = 0
-    print(f'################ Names starting with {key} ################')
-    for v in nlist:
-        if v.name.startswith(key):
-            print(v)
-            cnt += 1
-    print(f'################ Total {cnt} names found ################')
     return cnt
 
 
